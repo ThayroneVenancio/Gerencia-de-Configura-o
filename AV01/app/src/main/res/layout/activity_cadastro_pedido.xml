@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303C42"
+    tools:context=".CadastroPedido">
+
+    <EditText
+        android:id="@+id/txt_produtoPedido"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="116dp"
+        android:background="#303C42"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Produto"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_valorPedido"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:background="#303C42"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Valor"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_produtoPedido" />
+
+    <EditText
+        android:id="@+id/txt_descProduto"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:background="#303C42"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Descrição do Produto"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#CCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valorPedido" />
+
+    <EditText
+        android:id="@+id/dt_dataPedido"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:background="#303C42"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Data do Pedido"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descProduto" />
+
+    <EditText
+        android:id="@+id/dt_dataPrevista"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:background="#303C42"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Data Prevista da Entrega"
+        android:inputType="date"
+        android:paddingStart="13dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCC"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt_dataPedido" />
+
+    <Button
+        android:id="@+id/bt_salvarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/login_button_bg"
+        android:fontFamily="monospace"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt_dataPrevista" />
+
+    <Button
+        android:id="@+id/bt_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bt_sair"
+        android:fontFamily="monospace"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/bt_salvarPedido"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt_dataPrevista" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Cadastro de Pedido"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="81dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/peixe6"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/login_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/login_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descProduto" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/login_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_produtoPedido" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/login_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valorPedido" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="255dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/login_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt_dataPedido" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

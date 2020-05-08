@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303C42"
+    tools:context=".CadastroICMS">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Estado"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_porcentagem"
+        android:layout_width="342dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/rdbt_18"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:fontFamily="monospace"
+            android:text="18%"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/rdbt_175"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:fontFamily="monospace"
+            android:text="17,5%"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/rdbt_17"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:button="?android:attr/listChoiceIndicatorSingle"
+            android:fontFamily="monospace"
+            android:text="17%"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_voltarIcms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bt_sair"
+        android:fontFamily="monospace"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/bt_salvar"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_porcentagem" />
+
+    <Button
+        android:id="@+id/bt_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/login_button_bg"
+        android:fontFamily="monospace"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_porcentagem" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cadastro de ICMS"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="81dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/peixe6"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spEstados"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FBFAFA"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Porcentagem da Taxa de ICMS"
+        android:textColor="#FBFAFA"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEstados" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
