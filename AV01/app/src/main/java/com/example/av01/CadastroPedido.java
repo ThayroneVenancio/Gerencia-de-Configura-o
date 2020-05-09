@@ -22,6 +22,8 @@ public class CadastroPedido extends Activity {
     private Button salvar;
     private Button voltar;
     private Double preco;
+    private String descProduto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,6 +133,14 @@ public class CadastroPedido extends Activity {
 
     }
 
+    public String getDescProduto() {
+        return descProduto;
+    }
+
+    public void setDescProduto(String descProduto) {
+        this.descProduto = descProduto;
+    }
+
     public void setDescriçao(EditText descriçao) {
         this.descriçao = descriçao;
     }
@@ -161,4 +171,10 @@ public class CadastroPedido extends Activity {
             return false;
         }
     }
+
+    public void informarProduto(String infProduto){
+        this.descProduto = infProduto;
+    }
+
+
 }
